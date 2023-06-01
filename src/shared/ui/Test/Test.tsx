@@ -4,8 +4,7 @@ import classNames from "classnames";
 
 function Test() {
   return <div>
-    Test component v2.0
-  </div>; 
+    Test component v2.1  </div>; 
 }
 
 export default memo(Test);
