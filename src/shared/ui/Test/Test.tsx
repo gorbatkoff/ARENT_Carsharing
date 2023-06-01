@@ -3,7 +3,7 @@ import React, {memo} from "react";
 function Test() {
     return (
         <div>
-            Committing test
+            dev button v1.1
         </div>
     );
 }
