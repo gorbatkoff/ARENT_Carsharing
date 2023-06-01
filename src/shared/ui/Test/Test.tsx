@@ -3,7 +3,7 @@ import React, {memo} from "react";
 function Test() {
     return (
         <div>
-            Commit
+            Committing test
         </div>
     );
 }
