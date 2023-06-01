@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npx webpack serve --env port=3000",
     "build:prod": "npx webpack --env mode=production",
-    "build:dev": "npx webpack --env mode=development"
+    "build:dev": "npx webpack --env mode=development",
+    "lint:ts": "eslint \"**/*.{ts,tsx}\"",
+    "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +18,12 @@
     "@types/react-dom": "^18.0.11",
     "@types/webpack": "^5.28.1",
     "@types/webpack-dev-server": "^4.7.2",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "classnames": "^2.3.2",
     "css-loader": "^6.7.3",
+    "eslint": "^8.41.0",
+    "eslint-plugin-react": "^7.32.2",
     "mini-css-extract-plugin": "^2.7.5",
     "sass": "^1.62.0",
     "sass-loader": "^13.2.2",
