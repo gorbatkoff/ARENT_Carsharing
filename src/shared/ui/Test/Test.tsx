@@ -1,11 +1,11 @@
-import React, { memo, ReactNode } from "react";
-import styles from "./Button.module.scss";
-import classNames from "classnames";
+import React, {memo} from "react";
 
 function Test() {
-  return <div>
-    Test component v2.3 dev Aztdsfrsthjyfvregaejibip
-    </div>; 
+    return (
+        <div>
+            Commit using git request-pull try 3
+        </div>
+    );
 }
 
 export default memo(Test);
