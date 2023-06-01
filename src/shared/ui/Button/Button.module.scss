@@ -1,0 +1,18 @@
+.Button {
+  line-height: 17px;
+  padding: 12px 22px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.primary {
+  color: var(--white-color);
+  background-color: var(--primary-color)
+}
+
+.info {
+  color: var(--black-color);
+  background-color: var(--inverted-white-color);
+}
