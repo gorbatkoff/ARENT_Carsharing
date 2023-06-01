@@ -4,7 +4,7 @@ import classNames from "classnames";
 
 function Test() {
   return <div>
-    Test component v2.3 dev 
+    Test component v2.3 dev Az
     </div>; 
 }
 
