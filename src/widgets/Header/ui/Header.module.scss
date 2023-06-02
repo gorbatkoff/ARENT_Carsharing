@@ -1,0 +1,10 @@
+.Header {
+  background-color: var(--secondary-color);
+  min-height: 70px;
+}
+
+.Wrapper {
+  width: var(--app-width);
+  display: flex;
+  align-items: center;
+}

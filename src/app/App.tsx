@@ -1,12 +1,15 @@
 import React from 'react'
-import Button, {ButtonTheme} from "shared/ui/Button/Button";
+import {Route, Routes} from "react-router-dom";
+import {MainPage} from "pages/MainPage";
+import {Header} from "widgets/Header";
 
 function App() {
     return (
         <div className="App">
-            <Button theme={ButtonTheme.PRIMARY}>
-                Hello world
-            </Button>
+            <Header/>
+            <Routes>
+                <Route path={"/"} element={<MainPage/>}/>
+            </Routes>
         </div>
     )
 }
