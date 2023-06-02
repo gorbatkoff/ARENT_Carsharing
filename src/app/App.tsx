@@ -1,7 +1,5 @@
 import React from 'react'
-
-import "./styles/index.scss"
-import Button, {ButtonTheme} from "../shared/ui/Button/Button";
+import Button, {ButtonTheme} from "shared/ui/Button/Button";
 
 function App() {
     return (
