@@ -1,7 +1,9 @@
 import {memo} from "react";
 import styles from "./Header.module.scss";
 import classNames from "classnames";
-import ChatIcon from "shared/assets/images/chat.svg";
+import BurgerMenu from "shared/assets/images/burger-menu-20-20.svg";
+import ArentLogo from "shared/assets/images/ARENT-TITLE.svg";
+import ArentTitle from "shared/assets/images/ARENT-LOGO.svg";
 import {Icon} from "shared/ui/Icon/Icon";
 
 interface HeaderProps {
@@ -15,7 +17,12 @@ export const Header = memo((props: HeaderProps) => {
     return (
         <div className={classNames(styles.Header, {}, [className])}>
             <div className={styles.Wrapper}>
-                <Icon Svg={ChatIcon} />
+                <Icon Svg={BurgerMenu}/>
+
+                <div className={styles.logo}>
+                    <Icon Svg={ArentTitle} />
+                    <Icon Svg={ArentLogo} />
+                </div>
             </div>
         </div>
     );
