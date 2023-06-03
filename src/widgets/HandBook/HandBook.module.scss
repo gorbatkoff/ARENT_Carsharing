@@ -1,3 +1,21 @@
+$indent: 20px;
+
 .HandBook {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: $indent;
+}
+
+.handBookList {
+    display: flex;
+    justify-content: space-between;
+    column-gap: $indent;
+}
+
+.handBookListItem {
+    width: 280px;
+    height: 185px;
 
 }

@@ -1,18 +1,33 @@
-import {memo} from "react";
+import { memo } from "react";
 import styles from "./Motorcycles.module.scss";
 import classNames from "classnames";
+import Text from "shared/ui/Text/Text";
+import TileLink from "shared/ui/TileLink/TileLink";
 
 interface MotorcyclesProps {
-    className?: string
+  className?: string;
 }
 
 export const Motorcycles = memo((props: MotorcyclesProps) => {
+  const { className } = props;
 
-    const {className} = props;
-
-    return (
-        <div className={classNames(styles.Motorcycles, {}, [className])}>
-            Motorcycle
-        </div>
-    );
+  return (
+    <div className={classNames(styles.Motorcycles, {}, [className])}>
+      <Text title="Мотоциклы и мототехника" />
+      <div className={classNames(styles.motoList)}>
+        <TileLink className={styles.motoListItem} urlLink="#">
+          Мотоциклы
+        </TileLink>
+        <TileLink className={styles.motoListItem} urlLink="#">
+          Скутеры
+        </TileLink>
+        <TileLink className={styles.motoListItem} urlLink="#">
+          Мотовездеходы
+        </TileLink>
+        <TileLink className={styles.motoListItem} urlLink="#">
+          Снегоходы
+        </TileLink>
+      </div>
+    </div>
+  );
 });
