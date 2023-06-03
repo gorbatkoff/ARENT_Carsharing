@@ -5,13 +5,13 @@ $indent: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    row-gap: indent;
+    row-gap: $indent;
 }
 
 .handBookList {
     display: flex;
     justify-content: space-between;
-    column-gap: indent;
+    column-gap: $indent;
 }
 
 .handBookListItem {
