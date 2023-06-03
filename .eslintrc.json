@@ -5,10 +5,8 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended"
-    ],
-    "overrides": [
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
@@ -16,11 +14,22 @@
         "sourceType": "module"
     },
     "plugins": [
+        "@typescript-eslint",
         "react",
-        "@typescript-eslint"
+        "react-hooks"
     ],
     "rules": {
+        "indent": ["error", 4],
+        "linebreak-style": "off",
+        "quotes": ["off", "double"],
+        "semi": ["off", "never"],
         "react/react-in-jsx-scope": "off",
-        "react/display-name":"off"
+        "@typescript-eslint/no-var-requires": "off",
+        "react-hooks/rules-of-hooks": "error",
+        // Проверяем правила хуков
+        "react-hooks/exhaustive-deps": "error",
+        // Проверяем зависимости эффекта
+        "react/display-name": "off",
+        "@typescript-eslint/ban-ts-comment": "warn"
     }
 }
