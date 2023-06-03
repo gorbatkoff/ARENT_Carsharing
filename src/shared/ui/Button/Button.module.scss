@@ -16,3 +16,9 @@
   color: var(--black-color);
   background-color: var(--inverted-white-color);
 }
+
+.clear {
+  background: none;
+  padding: 0;
+  line-height: 0;
+}
