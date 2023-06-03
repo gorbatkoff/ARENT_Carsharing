@@ -1,0 +1,27 @@
+.TileArticle {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.tileArticleImg {
+    border-radius: 7px;
+    background-color: var(--tile-article-bg);
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 7px;
+    }
+}
+
+.tileArticleTitle {
+    padding-top: 10px;
+    padding-left: 5px;
+    text-align: start;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size:16px;
+    font-weight: 400;
+    word-wrap: wrap;
+}
