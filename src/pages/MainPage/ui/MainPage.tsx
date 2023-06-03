@@ -6,6 +6,7 @@ import Text from "shared/ui/Text/Text";
 import { HandBook } from "widgets/HandBook/HandBook";
 import { Motorcycles } from "widgets/Motorcycles/Motorcycles";
 import { CommercialTransport } from "widgets/CommercialTransport/CommercialTransport";
+
 interface MainPageProps {
   className?: string;
 }
@@ -13,7 +14,7 @@ interface MainPageProps {
 const MainPage = (props: MainPageProps) => {
   const { className } = props;
 
-  return (
+    return (
     <div className={classNames(styles.MainPage, {}, [className])}>
       <Container>
         <Text
@@ -28,6 +29,7 @@ const MainPage = (props: MainPageProps) => {
       </Container>
     </div>
   );
+
 };
 
 export default memo(MainPage);
