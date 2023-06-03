@@ -1,18 +1,17 @@
-import React, { memo, ReactNode, CSSProperties } from "react";
+import React from "react";
 import styles from "./Text.module.scss";
 import classNames from "classnames";
 
 export enum TextTheme {
-  PRIMARY = "primary",
-  ERROR = "error",
-  TITLE = "title_theme",
-  DEFAULT = "default",
+    PRIMARY = "primary",
+    ERROR = "error",
+    DEFAULT = "default",
 }
 
 export enum TextAlign {
-  RIGHT = "right",
-  CENTER = "center",
-  LEFT = "left",
+    RIGHT = "right",
+    CENTER = "center",
+    LEFT = "left",
 }
 
 export enum TextSize {
@@ -22,31 +21,31 @@ export enum TextSize {
 }
 
 interface TextProps {
-  className?: string;
-  title?: string;
-  description?: string;
-  theme?: string;
-  align?: string;
-  size?: string;
+    className?: string;
+    title?: string;
+    description?: string;
+    theme?: string;
+    align?: string;
+    size?: string;
 }
 
 export default function Text(props: TextProps) {
-  const {
-    className,
-    title,
-    description,
-    theme = TextTheme.PRIMARY,
-    align = TextAlign.LEFT,
-    size = TextSize.M,
-  } = props;
+    const {
+        className,
+        title,
+        description,
+        theme = TextTheme.DEFAULT,
+        align = TextAlign.LEFT,
+        size = TextSize.M,
+    } = props;
 
-  const addition = [className, styles[theme], styles[align],styles[size]];
+    const addition = [className, styles[theme], styles[align], styles[size]];
 
-  return (
-    <div className={classNames(styles.Text, {}, [...addition])}>
-      {title && <h4 className={styles.title}>{title}</h4>}
-      {description && <p className={styles.description}>{description}</p>}
-    </div>
-  );
+    return (
+        <div className={classNames('', {}, [...addition])}>
+            {title && <h4 className={styles.title}>{title}</h4>}
+            {description && <p className={styles.description}>{description}</p>}
+        </div>
+    );
 }
 
