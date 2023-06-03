@@ -20,6 +20,7 @@ const MainPage = (props: MainPageProps) => {
           title="Легковые автомобили в Москве"
           description="7 532 предложения"
         />
+        
       </Container>
       <Container>
         <CommercialTransport/>
