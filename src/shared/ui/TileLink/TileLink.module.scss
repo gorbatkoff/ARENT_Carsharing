@@ -1,0 +1,22 @@
+.TileLink {
+  position: relative;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 7px;
+  background-color: var(--tile-link-bg);
+  display: inline-block;
+}
+
+.tileLinkTitle {
+  position: absolute;
+  bottom: 0;
+  padding: 25px;
+  display: flex;
+  align-self:flex-end ;
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 20px;
+  word-wrap: wrap;
+  width: 60%;
+}
