@@ -2,15 +2,7 @@ import React, { memo, ReactNode, CSSProperties } from "react";
 import styles from "./TileArticle.module.scss";
 import classNames from "classnames";
 
-// export enum TileLinkTheme {
-//   PRIMARY = "primary",
-//   INFO = "info",
-// }
 
-// type Props = {
-//   children: ReactNode;
-
-// };
 interface TileArticleProps {
   children: ReactNode;
   url: string;
