@@ -1,11 +1,29 @@
-.TileLink {
-    line-height: 17px;
-  padding: 12px 22px;
-  border-radius: 7px;
-  border: none;
-  cursor: pointer;
-  outline: none;  
-}
 .TileLinkDiv {
-    border: 1px solid red;
+  cursor: pointer;
+  outline: none;
+
+  border: none;
+  border-radius: 7px;
+  background-color: var(--tile-link-bg);
+  display: inline-block;
+  margin: 10px;
+}
+.TileLink {
+  position: relative;
+  display: flex;
+  padding: 25px;
+  height: 100%;
+  width: 100%;
+
+}
+.TileLinkTitle {
+  position: absolute;
+  display: flex;
+  align-self:flex-end ;
+
+  text-decoration: none;
+  color: var(--white-color);
+  font-size: 20px;
+  text-wrap: wrap;
+  width: 60%;
 }
