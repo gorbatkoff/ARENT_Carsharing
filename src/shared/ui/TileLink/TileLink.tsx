@@ -3,28 +3,29 @@ import styles from "./TileLink.module.scss";
 import classNames from "classnames";
 
 interface TileLinkProps {
-  id?:string;
+  id?: string;
   className?: string;
   children: ReactNode;
-  url: string;
+  urlLink: string;
   width?: string | number;
   height?: string | number;
-  // imageUrl: string
 }
 
 function TileLink(props: TileLinkProps) {
-  const {className, children, url, width, height } = props;
-  
+  const { className, children, urlLink, width, height } = props;
+
   const cls: CSSProperties = {
     width,
     height,
   };
 
   return (
-    <a className={classNames(className,styles.TileLink)} style={cls} href={url}>
-      <span className={classNames(styles.tileLinkTitle)}>
-        {children}
-      </span>
+    <a
+      className={classNames(className, styles.TileLink)}
+      style={cls}
+      href={urlLink}
+    >
+      <span className={classNames(styles.tileLinkTitle)}>{children}</span>
     </a>
   );
 }

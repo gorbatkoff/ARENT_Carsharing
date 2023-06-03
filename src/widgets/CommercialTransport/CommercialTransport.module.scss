@@ -1,42 +1,48 @@
+$indent: 20px;
+
 .CommercialTransport {
     margin: 50px 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    row-gap: 20px;
+    row-gap: $indent;
 }
+
 .CommercialTransportList {
     display: grid;
-    grid-template-columns: repeat(2,1fr) 482px;
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr) 482px;
+    grid-gap: $indent;
 }
+
 .firstColumn {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: $indent;
 }
+
 .secondColumn {
-   grid-column-start: 3;
-   grid-column-end: 3;
-   grid-row-start: 1;
-   grid-row-end: 3;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   row-gap: 20px;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: $indent;
 }
+
 .transportListItem {
     align-self: stretch;
     height: 237px;
     width: 330px;
 }
+
 .truckItem {
     height: 100%;
 
     width: 100%;
 }
+
 .button {
     height: 58px;
     width: 100%;

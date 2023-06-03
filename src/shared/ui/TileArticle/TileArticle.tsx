@@ -7,12 +7,12 @@ interface TileArticleProps {
   children: ReactNode;
   width?: string | number;
   height?: string | number;
-  url: string;
+  urlLink: string;
   imageUrl?: string;
 }
 
 function TileArticle(props: TileArticleProps) {
-  const { className, children, url, width, height, imageUrl } = props;
+  const { className, children, urlLink, width, height, imageUrl } = props;
 
   const cls = {
     width,
@@ -24,11 +24,11 @@ function TileArticle(props: TileArticleProps) {
       <a
         className={classNames(className, styles.tileArticleImg)}
         style={cls}
-        href={url}
+        href={urlLink}
       >
         <img src={imageUrl}></img>
       </a>
-      <a className={classNames(styles.tileArticleTitle)} href={url}>
+      <a className={classNames(styles.tileArticleTitle)} href={urlLink}>
         {children}
       </a>
     </div>

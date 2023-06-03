@@ -15,32 +15,27 @@ export const CommercialTransport = memo((props: CommercialTransportProps) => {
   return (
     <div className={classNames(styles.CommercialTransport, {}, [className])}>
       <Text title="Коммерческий транспорт" />
-
       <div className={classNames(styles.CommercialTransportList)}>
-        {/* <div className={classNames(styles.firstColumn)}> */}
-          <TileLink className={styles.transportListItem} url="#">
-            Легкие коммерческие
-          </TileLink>
-          <TileLink className={styles.transportListItem} url="#">
-            Грузовики
-          </TileLink>
-          <div className={classNames(styles.secondColumn)}>
-          <TileLink className={styles.truckItem} url="#">
+        <TileLink className={styles.transportListItem} urlLink="#">
+          Легкие коммерческие
+        </TileLink>
+        <TileLink className={styles.transportListItem} urlLink="#">
+          Грузовики
+        </TileLink>
+        <div className={classNames(styles.secondColumn)}>
+          <TileLink className={styles.truckItem} urlLink="#">
             Седельные тягачи
           </TileLink>
           <Button theme={ButtonTheme.PRIMARY} className={styles.button}>
             Посмотреть все
           </Button>
         </div>
-          <TileLink className={styles.transportListItem} url="#">
-            Строительная и дорожная
-          </TileLink>
-          <TileLink className={styles.transportListItem} url="#">
-            Погрузчики
-          </TileLink>
-          
-        {/* </div> */}
-        
+        <TileLink className={styles.transportListItem} urlLink="#">
+          Строительная и дорожная
+        </TileLink>
+        <TileLink className={styles.transportListItem} urlLink="#">
+          Погрузчики
+        </TileLink>
       </div>
     </div>
   );

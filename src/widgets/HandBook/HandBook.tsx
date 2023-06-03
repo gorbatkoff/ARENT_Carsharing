@@ -16,16 +16,16 @@ export const HandBook = memo((props: HandBookProps) => {
     <div className={classNames(styles.HandBook, {}, [className])}>
       <Text title="Справочник" />
       <div className={classNames(styles.handBookList)}>
-        <TileArticle className={styles.handBookListItem} url="#">
+        <TileArticle className={styles.handBookListItem} urlLink="#">
           Как происходит сделка
         </TileArticle>
-        <TileArticle className={styles.handBookListItem} url="#">
+        <TileArticle className={styles.handBookListItem} urlLink="#">
           Как разместить свое объявление
         </TileArticle>
-        <TileArticle className={styles.handBookListItem} url="#">
+        <TileArticle className={styles.handBookListItem} urlLink="#">
           Проверяем авто по базам
         </TileArticle>
-        <TileArticle className={styles.handBookListItem}url="#">
+        <TileArticle className={styles.handBookListItem} urlLink="#">
           Коммерческий транспорт и процесс регистрации
         </TileArticle>
       </div>

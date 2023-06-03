@@ -1,3 +1,5 @@
+$indent: 20px;
+
 .Motorcycles {
     margin: 50px 0;
     display: flex;
@@ -9,9 +11,10 @@
 .motoList {
     display: flex;
     justify-content: space-between;
-    column-gap: 20px;
+    column-gap: $indent;
     height: 326px;
 }
+
 .motoListItem {
     height: 326px;
     width: 280px;
