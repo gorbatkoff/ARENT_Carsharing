@@ -26,18 +26,14 @@ function TileLink(props: TileLinkProps) {
     width,
     height,
   };
+
   return (
-    <div className={classNames(styles.TileLinkDiv)} >
-      <a style={cls} className={classNames(styles.TileLink)} href={url}>
-       <span className={classNames(styles.TileLinkTitle)}>{children}</span>
-      </a>
-    </div>
+    <a className={classNames(styles.TileLink)} style={cls} href={url}>
+      <span className={classNames(styles.tileLinkTitle)}>
+        {children}
+      </span>
+    </a>
   );
-  // return (
-  //   <a className={classNames(styles.TileLink)} href={url} style={cls}>
-  //     <div style={cls} className={classNames(styles.TileLinkDiv)}>{children}</div>
-  //   </a>
-  // );
 }
 
 export default memo(TileLink);
