@@ -11,7 +11,7 @@ import classNames from "classnames";
 //   children: ReactNode;
 
 // };
-interface TileLinkProps {
+interface TileArticleProps {
   children: ReactNode;
   url: string;
   width: string | number;
@@ -19,7 +19,7 @@ interface TileLinkProps {
   imageUrl: string;
 }
 
-function TileLink(props: TileLinkProps) {
+function TileArticle(props: TileArticleProps) {
   const { children, url, width, height, imageUrl } = props;
 
   const cls: CSSProperties = {
@@ -40,4 +40,4 @@ function TileLink(props: TileLinkProps) {
   );
 }
 
-export default memo(TileLink);
+export default memo(TileArticle);
