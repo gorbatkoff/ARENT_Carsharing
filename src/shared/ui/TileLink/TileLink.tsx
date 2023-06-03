@@ -2,33 +2,26 @@ import React, { memo, ReactNode, CSSProperties } from "react";
 import styles from "./TileLink.module.scss";
 import classNames from "classnames";
 
-// export enum TileLinkTheme {
-//   PRIMARY = "primary",
-//   INFO = "info",
-// }
-
-// type Props = {
-//   children: ReactNode;
-
-// };
 interface TileLinkProps {
+  id?:string;
+  className?: string;
   children: ReactNode;
   url: string;
-  width: string | number;
-  height: string | number;
+  width?: string | number;
+  height?: string | number;
   // imageUrl: string
 }
 
 function TileLink(props: TileLinkProps) {
-  const { children, url, width, height } = props;
-
+  const {className, children, url, width, height } = props;
+  
   const cls: CSSProperties = {
     width,
     height,
   };
 
   return (
-    <a className={classNames(styles.TileLink)} style={cls} href={url}>
+    <a className={classNames(className,styles.TileLink)} style={cls} href={url}>
       <span className={classNames(styles.tileLinkTitle)}>
         {children}
       </span>
