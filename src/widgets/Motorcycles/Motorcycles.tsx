@@ -12,7 +12,7 @@ export const Motorcycles = memo((props: MotorcyclesProps) => {
 
     return (
         <div className={classNames(styles.Motorcycles, {}, [className])}>
-            Motorcycles
+            Motorcycle
         </div>
     );
 });
