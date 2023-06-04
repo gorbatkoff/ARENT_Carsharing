@@ -49,13 +49,14 @@ export const Footer = memo((props: FooterProps) => {
 
                 <hr/>
 
-                <div>
-                    <div>
+                <div className={styles.postContent}>
+                    <div className={styles.footerLogo}>
                         <Icon Svg={Logo}/>
+                        <span className={styles.copyright}>© 2023</span>
                     </div>
 
-                    <div>
-                        {arrayOfFooterLinks.map((link, index) => {
+                    <div className={styles.footerLinks}>
+                        {arrayOfUnderFooterLinks.map((link, index) => {
                             return <AppLink
                                 to={link[1]}
                                 key={index}
