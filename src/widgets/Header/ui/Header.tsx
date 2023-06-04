@@ -25,7 +25,7 @@ export const Header = memo((props: HeaderProps) => {
                 </Button>
 
                 <div className={styles.logo}>
-                    <Icon Svg={ArentTitle}/>
+                    <Icon Svg={ArentTitle} />
                     <Icon Svg={ArentLogo}/>
                 </div>
 
