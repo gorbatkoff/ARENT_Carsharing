@@ -6,12 +6,14 @@ import Text from 'shared/ui/Text/Text'
 import {CommercialTransport} from 'widgets/CommercialTransport'
 import {Motorcycles} from 'widgets/Motorcycles'
 import {HandBook} from 'widgets/HandBook'
+import {RecentlyWatch} from "widgets/RecentlyWatch";
 
 interface MainPageProps {
     className?: string;
 }
 
 const MainPage = (props: MainPageProps) => {
+
     const {className} = props
 
     return (
@@ -24,6 +26,10 @@ const MainPage = (props: MainPageProps) => {
             </Container>
 
             <Container>
+                {/* Нужно получать список просмотренных объявлений выше*/}
+                <RecentlyWatch/>
+                {/* и отрисовывать по условию */}
+
                 <CommercialTransport/>
                 <Motorcycles/>
                 <HandBook/>

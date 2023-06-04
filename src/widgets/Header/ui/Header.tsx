@@ -31,13 +31,15 @@ export const Header = memo((props: HeaderProps) => {
 
                 <Input placeholder="Поиск объявлений" className={styles.Input}/>
 
-                <Button theme={ButtonTheme.INFO} className={styles.Button}>
-                    Войти
-                </Button>
+                <div className={styles.buttons}>
+                    <Button theme={ButtonTheme.INFO} className={styles.Button}>
+                        Войти
+                    </Button>
 
-                <Button theme={ButtonTheme.PRIMARY} className={styles.Button}>
-                    Разместить объявление
-                </Button>
+                    <Button theme={ButtonTheme.PRIMARY} className={styles.Button}>
+                        Разместить объявление
+                    </Button>
+                </div>
             </div>
         </div>
     );

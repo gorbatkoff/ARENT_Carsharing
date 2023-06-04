@@ -1,6 +1,5 @@
 .title {
   color: var(--black-color);
-  margin-bottom: 10px;
 }
 
 .description {
@@ -9,6 +8,10 @@
 
 .primary {
   color: var(--primary-color);
+
+  .title {
+    color: var(--primary-color);
+  }
 }
 
 .error {
@@ -64,6 +67,17 @@
 
   .description {
     font: var(--font-l);
+  }
+}
+
+.size_s {
+  .title {
+    font: var(--font-m);
+    font-weight: bold;
+  }
+
+  .description {
+    font: var(--font-m);
   }
 }
 
