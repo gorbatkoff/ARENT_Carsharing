@@ -1,0 +1,10 @@
+.Footer {
+
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-gap: 1em;
+  padding-bottom: 40px;
+}
