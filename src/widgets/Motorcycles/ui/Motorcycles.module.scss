@@ -1,21 +1,21 @@
 $indent: 20px;
 
 .Motorcycles {
-    margin: 50px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    row-gap: 30px;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  row-gap: 30px;
 }
 
 .motoList {
-    display: flex;
-    justify-content: space-between;
-    column-gap: $indent;
-    height: 326px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: $indent;
+  height: 326px;
 }
 
 .motoListItem {
-    height: 326px;
-    width: 280px;
+  height: 326px;
+  width: 280px;
 }

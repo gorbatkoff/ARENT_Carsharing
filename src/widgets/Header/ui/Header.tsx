@@ -6,6 +6,7 @@ import ArentLogo from "shared/assets/images/ARENT-TITLE.svg";
 import ArentTitle from "shared/assets/images/ARENT-LOGO.svg";
 import {Icon} from "shared/ui/Icon/Icon";
 import {Input} from "shared/ui/Input/Input";
+import {AppLink} from "shared/ui/AppLink/AppLink";
 import Button, {ButtonTheme} from "shared/ui/Button/Button";
 
 interface HeaderProps {
@@ -24,10 +25,12 @@ export const Header = memo((props: HeaderProps) => {
                     <Icon Svg={BurgerMenu}/>
                 </Button>
 
-                <div className={styles.logo}>
-                    <Icon Svg={ArentTitle} />
-                    <Icon Svg={ArentLogo}/>
-                </div>
+                <AppLink to="/">
+                    <div className={styles.logo}>
+                        <Icon Svg={ArentTitle} />
+                        <Icon Svg={ArentLogo}/>
+                    </div>
+                </AppLink>
 
                 <Input placeholder="Поиск объявлений" className={styles.Input}/>
 
