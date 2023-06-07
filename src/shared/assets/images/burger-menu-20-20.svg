@@ -1,4 +1,4 @@
-<svg class="burger-btn active" width="25" height="25" viewBox="0 0 40 26" xmlns="http://www.w3.org/2000/svg">
+<svg class="burger-btn active" fill="#7E8497" width="25" height="25" viewBox="0 0 40 26" xmlns="http://www.w3.org/2000/svg">
     <rect class="burger-btn--1" width="40" height="3" rx="3" ry="3" />
     <rect class="burger-btn--2" width="40" height="3" y="10" rx="3" ry="3" />
     <rect class="burger-btn--3" width="40" height="3" y="20" rx="3" ry="3" />

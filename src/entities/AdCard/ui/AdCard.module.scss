@@ -1,0 +1,29 @@
+.AdCard {
+  padding: 16px;
+  border-radius: 7px;
+  margin: 5px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 20px;
+
+  &:hover {
+    background-color: var(--input-light-bg)
+  }
+}
+
+.content {
+  .engine {
+    margin-top: 15px;
+  }
+
+  .date {
+    margin-top: 12%;
+  }
+}
+
+.price {
+  .ownerType {
+    margin-top: var(--indent)
+  }
+}

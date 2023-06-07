@@ -1,0 +1,21 @@
+.union {
+  border-radius: 7px;
+  padding: 6px 9px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: 5px;
+  }
+}
+
+.organization {
+  background: #FEC8A9;
+  color: #EF4D2A;
+}
+
+.owner {
+  background: #B9D2FA;
+  color: var(--primary-color);
+}
