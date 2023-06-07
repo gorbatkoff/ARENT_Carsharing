@@ -3,6 +3,7 @@ import styles from "./RecentlyWatch.module.scss";
 import classNames from "classnames";
 import Text from "shared/ui/Text/Text";
 import {Card} from "shared/ui/Card/Card";
+import CarLogo from "shared/assets/images/Car.png";
 
 interface RecentlyWatchProps {
     className?: string
@@ -17,7 +18,7 @@ export const RecentlyWatch = memo((props: RecentlyWatchProps) => {
         const card = (<Card
             title="BMW X5 2002"
             price={2500}
-            imageUrl="https://clck.ru/34be6a"
+            imageUrl={CarLogo}
             description="Москва, Пражская"
             postscription={"8 часов назад"}
         />)
