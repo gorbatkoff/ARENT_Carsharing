@@ -1,0 +1,12 @@
+.AdSearch {
+  padding: var(--indent) 0;
+}
+
+.sortingButtons {
+  display: flex;
+  padding: var(--indent) 0;
+
+  button {
+    margin-right: var(--indent);
+  }
+}
