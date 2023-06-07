@@ -1,5 +1,8 @@
 .AdSearch {
   padding: var(--indent) 0;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  grid-gap: calc(var(--indent)*2);
 }
 
 .sortingButtons {
@@ -9,4 +12,29 @@
   button {
     margin-right: var(--indent);
   }
+}
+
+
+.brandList {
+  padding: var(--indent)/2 0;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showAdsButton {
+  width: 100%;
+  padding: 16px 0;
+}
+
+.secondColumn {
+  display: flex;
+  flex-direction: column;
+  column-gap: calc(var(--indent)*2);
+}
+
+.advertiseCard {
+  width: 100%;
 }
