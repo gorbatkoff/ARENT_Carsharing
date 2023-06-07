@@ -7,6 +7,7 @@ import {CommercialTransport} from 'widgets/CommercialTransport'
 import {Motorcycles} from 'widgets/Motorcycles'
 import {HandBook} from 'widgets/HandBook'
 import {RecentlyWatch} from "widgets/RecentlyWatch";
+import {AdSearch} from "widgets/AdSearch/ui/AdSearch";
 
 interface MainPageProps {
     className?: string;
@@ -26,10 +27,10 @@ const MainPage = (props: MainPageProps) => {
             </Container>
 
             <Container>
+                <AdSearch/>
                 {/* Нужно получать список просмотренных объявлений выше*/}
                 <RecentlyWatch/>
                 {/* и отрисовывать по условию */}
-
                 <CommercialTransport/>
                 <Motorcycles/>
                 <HandBook/>
