@@ -4,6 +4,7 @@
     "indentation": [2],
     "selector-class-pattern": null,
     "no-missing-end-of-source-newline": null,
-    "scss/comment-no-empty": null
+    "scss/comment-no-empty": null,
+    "block-no-empty": null
   }
 }
