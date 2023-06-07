@@ -12,6 +12,7 @@ interface CardProps {
     price?: number | string;
     description?: string;
     postscription?: string;
+    theme?: TextTheme;
 }
 
 export const Card = memo((props: CardProps) => {
@@ -22,7 +23,8 @@ export const Card = memo((props: CardProps) => {
         description,
         price,
         imageUrl,
-        postscription
+        postscription,
+        theme = TextTheme.PRIMARY
     } = props;
 
     return (
@@ -30,7 +32,7 @@ export const Card = memo((props: CardProps) => {
             <div className={styles.imgWrapper}>
                 {imageUrl ? <img src={imageUrl} alt={title}/> : null}
             </div>
-            {title && <Text title={title} theme={TextTheme.PRIMARY} size={TextSize.S}/>}
+            {title && <Text title={title} theme={theme} size={TextSize.S}/>}
             {price && <Price price={price}/>}
             {description && <Text description={description} theme={TextTheme.DEFAULT}/>}
             {postscription && <Text description={postscription} theme={TextTheme.DEFAULT}/>}
