@@ -12,8 +12,8 @@ export const NotFoundPage = memo((props: NotFoundPageProps) => {
     const {className} = props;
 
     return (
-        <div className={classNames(styles.NotFoundPage, {}, [className])}>
-            <div>404 Page Not Found</div>
+        <div className={classNames("", {}, [className])}>
+            <div>404 Page Not Found!</div>
         </div>
     );
 });
