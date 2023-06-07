@@ -4,6 +4,7 @@ import {MainPage} from "pages/MainPage";
 import {Header} from "widgets/Header";
 import {Footer} from "widgets/Footer";
 import {Navbar} from "widgets/Navbar";
+import {NotFoundPage} from "pages/NotFoundPage";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
 
             <Routes>
                 <Route path={"/"} element={<MainPage/>}/>
+                <Route path={"*"} element={<NotFoundPage/>}/>
             </Routes>
 
             <Footer/>
