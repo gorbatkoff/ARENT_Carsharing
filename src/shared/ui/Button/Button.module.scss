@@ -7,13 +7,11 @@
   outline: none;
   transition: all 0.3s;
 
-  display: flex;
-  justify-content: center;
-  column-gap: 8px;
-  align-items:flex-end;
-
   &:hover {
     opacity: 0.8;
+  }
+  Svg {
+    margin-right: 8px;
   }
 }
 
