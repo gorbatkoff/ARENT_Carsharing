@@ -1,0 +1,49 @@
+.Group {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding: 6px 0;
+}
+
+.key {
+	width: fit-content;
+	text-align: left;
+}
+.value {
+	white-space:nowrap;
+}
+.right {
+	.value {
+		text-align: right;
+	}
+}
+
+.left {
+	.value {
+		text-align: left;
+	}
+}
+
+.center {
+	.value {
+		text-align: center;
+	}
+}
+
+.primary {
+	.key{
+		color: var(--inverted-secondary-color);
+	}
+	.value{
+		color: var(--secondary-color);
+	}
+}
+.default {
+	.key {
+			color: var(--secondary-color);
+		}
+
+		.value {
+			color: var(--secondary-color);
+		}
+}
