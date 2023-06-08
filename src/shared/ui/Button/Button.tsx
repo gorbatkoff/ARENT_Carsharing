@@ -7,6 +7,8 @@ export enum ButtonTheme {
     PRIMARY = "primary",
     INFO = "info",
     CLEAR = "clear",
+    WHITE_PRIMARY = "white-primary",
+    WHITE_SECONDARY = "white-secondary",
 }
 
 type ButtonProps = {
