@@ -2,7 +2,7 @@
   padding: var(--indent) 0;
   display: grid;
   grid-template-columns: 1fr 280px;
-  grid-gap: calc(var(--indent)*2);
+  grid-gap: calc(var(--indent) * 2);
 }
 
 .sortingButtons {
@@ -16,7 +16,7 @@
 
 
 .brandList {
-  padding: var(--indent)/2 0;
+  padding: var(--indent) / 2 0;
   width: 100%;
   height: fit-content;
   display: flex;
@@ -32,7 +32,7 @@
 .secondColumn {
   display: flex;
   flex-direction: column;
-  column-gap: calc(var(--indent)*2);
+  column-gap: calc(var(--indent) * 2);
 }
 
 .advertiseCard {
