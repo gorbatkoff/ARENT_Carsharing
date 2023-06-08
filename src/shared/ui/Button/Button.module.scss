@@ -7,13 +7,11 @@
   outline: none;
   transition: all 0.3s;
 
-  display: flex;
-  justify-content: center;
-  column-gap: 8px;
-  align-items: center;
-
   &:hover {
     opacity: 0.8;
+  }
+  Svg {
+    margin-right: 8px;
   }
 }
 
@@ -31,4 +29,15 @@
   background: none;
   padding: 0;
   line-height: 0;
+}
+
+.white-secondary {
+  border: 1px solid var(--input-light-bg);
+  background: none;
+  color: var(--secondary-color);
+}
+.white-primary {
+  border: 1px solid var(--input-light-bg);
+  background: none;
+  color: var(--primary-color);
 }
