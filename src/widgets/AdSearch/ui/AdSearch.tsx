@@ -29,7 +29,7 @@ const renderAdvertises = () =>{
 const renderBrands = () => {
     return brandList.map((item,index)=>{
         return <AppLink to={item.link} key={index}>
-            <Icon Svg={item.icon}></Icon>
+            <Icon Svg={item.icon}/>
         </AppLink>
     })
 }
@@ -40,7 +40,7 @@ export const AdSearch = memo((props: AdSearchProps) => {
 
     return (
         <div className={classNames(styles.AdSearch, {}, [className])}>
-            <div className={classNames(styles.firstColumn)}>
+            <div>
                 <Text title="Поиск объявлений"/>
                 <div className={styles.sortingButtons}>
                     <Button theme={ButtonTheme.INFO}>Эконом</Button>
