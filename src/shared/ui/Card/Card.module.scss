@@ -1,0 +1,17 @@
+.Card {
+}
+
+.imgWrapper {
+  background: var(--tile-article-bg);
+  width: 280px;
+  height: 207px;
+  border-radius: var(--border-radius);
+  margin-bottom: 10px;
+
+  img {
+    object-fit: contain;
+    width: 280px;
+    height: 207px;
+    border-radius: var(--border-radius);
+  }
+}

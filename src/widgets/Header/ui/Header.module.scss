@@ -1,0 +1,39 @@
+.Header {
+  background-color: var(--secondary-color);
+  min-height: fit-content;
+}
+
+.Wrapper {
+  width: var(--app-width);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  width: 125px;
+  margin: 0 15px;
+}
+
+.Input {
+  width: 480px;
+  margin: 0 30px;
+}
+
+.buttons {
+  margin-left: auto;
+}
+
+.Button {
+  margin: 0 5px;
+}
+
+.logo {
+  svg {
+    fill: white;
+  }
+}

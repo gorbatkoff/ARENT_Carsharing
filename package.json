@@ -8,15 +8,20 @@
     "build:prod": "npx webpack --env mode=production",
     "build:dev": "npx webpack --env mode=development",
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
-    "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix"
+    "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
+    "lint:scss": "npx stylelint \"**/*.scss\"",
+    "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@svgr/webpack": "^8.0.1",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
+    "@types/react-router-dom": "^5.3.3",
     "@types/webpack": "^5.28.1",
+    "@types/webpack-bundle-analyzer": "^4.6.0",
     "@types/webpack-dev-server": "^4.7.2",
     "@typescript-eslint/eslint-plugin": "^5.59.8",
     "@typescript-eslint/parser": "^5.59.8",
@@ -24,21 +29,27 @@
     "css-loader": "^6.7.3",
     "eslint": "^8.41.0",
     "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.7.5",
     "sass": "^1.62.0",
     "sass-loader": "^13.2.2",
     "style-loader": "^3.3.2",
+    "stylelint": "^15.6.3",
+    "stylelint-config-standard-scss": "^9.0.0",
     "ts-loader": "^9.4.2",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4",
     "webpack": "^5.79.0",
+    "webpack-bundle-analyzer": "^4.9.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.2"
   },
   "dependencies": {
     "html-webpack-plugin": "^5.5.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
   },
   "resolutions": {
     "@types/webpack": "^4.4.11"

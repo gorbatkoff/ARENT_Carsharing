@@ -1,0 +1,18 @@
+.MainPage {
+  padding: 60px 0;
+}
+
+
+.WidgetWrapper {
+  // width: var(--app-width);
+  // margin: 0 auto;
+}
+
+.recommendationList {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 30px 0;
+}

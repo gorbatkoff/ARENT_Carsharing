@@ -1,0 +1,17 @@
+.NavigationBar {
+  width: 100%;
+  background-color: var(--primary-color);
+  min-height: fit-content;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 52px;
+  padding: 18px 0;
+
+  a {
+    font-size: 14px;
+  }
+}

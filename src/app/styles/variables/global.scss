@@ -1,10 +1,11 @@
 :root {
   --font-family-main: "Inter", sans-serif;
 
+  // Fonts
   --font-size-m: 16px;
   --font-line-m: 24px;
   --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
-  --font-size-l: 24px;
+  --font-size-l: 26px;
   --font-line-l: 32px;
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
   --font-size-xl: 32px;
@@ -14,14 +15,25 @@
   // Colors
   --primary-color: #316BFE;
   --secondary-color: #262D3F;
-  --white-color: #ffffff;
-  --black-color: #000000;
+  --white-color: #fff;
+  --black-color: #000;
   --inverted-secondary-color: #78839E;
   --inverted-white-color: #E7EBF3;
   --success-color: #25CA5D;
   --danger-color: #EF4D2A;
   --inverted-danger-color: #FFDEDE;
+  --tile-link-bg: #777F95;
+  --tile-article-bg: #D7DEEF;
 
-  // widths
+  // width, indent
   --app-width: 1180px;
+  --indent: 20px;
+
+  // Input
+  --input-dark-bg: #40485A;
+  --input-color: #7E8497;
+  --input-light-bg: #E8EDF5;
+
+  // border-radius:
+  --border-radius: 7px;
 }
