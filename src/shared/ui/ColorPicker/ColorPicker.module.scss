@@ -1,0 +1,14 @@
+.ColorPicker {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+
+	cursor: pointer;
+	border: 2px solid var(--white-color);
+	border-style: solid;
+}
+
+.ColorPicker:focus {
+	border: 2px solid var(--inverted-secondary-color);
+	// border-style: solid;
+}
