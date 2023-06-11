@@ -1,4 +1,4 @@
-import React from "react";
+import React, {memo} from "react";
 import styles from "./Group.module.scss";
 import classNames from "classnames";
 
@@ -24,7 +24,7 @@ interface GroupProps {
 	align?: string,
 }
 
-export default function Group(props: GroupProps){
+export const Group = memo((props: GroupProps)=>{
     const {className,
         groupKey,
         groupValue,
@@ -40,4 +40,4 @@ export default function Group(props: GroupProps){
             <div className={classNames(styles.value)}>{groupValue}</div>
         </div>
     )
-}
+});
