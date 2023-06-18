@@ -1,8 +1,11 @@
 import * as webpack from "webpack";
 import * as MiniCssExtractPlugin from "mini-css-extract-plugin";
 import {BuildOptions} from "./types/config";
+import {buildBabelLoader} from "./loaders/babelLoader";
 
-export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
+export function buildLoaders(props: BuildOptions): webpack.RuleSetRule[] {
+
+    const {isDev} = props;
 
     const cssLoader = {
         test: /\.s[ac]ss$/i,
@@ -29,6 +32,8 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
         exclude: /node_modules/,
     }
 
+    const babelLoader = buildBabelLoader(props)
+
     const svgLoader = {
         test: /\.svg$/,
         use: ['@svgr/webpack'],
@@ -44,9 +49,10 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
     }
 
     return [
+        fileLoader,
+        svgLoader,
+        babelLoader,
         typescriptLoader,
         cssLoader,
-        svgLoader,
-        fileLoader
     ]
 }
