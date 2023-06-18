@@ -3,6 +3,9 @@ import classNames from "classnames";
 import {AdCard} from "entities/AdCard/ui/AdCard";
 import {Container} from "shared/ui/Container/Container";
 import Text from "shared/ui/Text/Text";
+import Select from "shared/ui/Select/Select";
+import {ColourOption} from "shared/ui/Select/data";
+import {SearchFilters} from "features/SearchFilters";
 
 interface SearchPageProps {
     className?: string
@@ -27,6 +30,8 @@ const SearchPage = (props: SearchPageProps) => {
         <Container className={classNames(styles.SearchPage, {}, [className])}>
             <div className={styles.content}>
                 <Text title="Поиск объявлений в Москве"/>
+
+                <SearchFilters/>
 
                 <AdCard {...data}/>
                 <AdCard {...data}/>

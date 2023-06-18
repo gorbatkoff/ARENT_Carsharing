@@ -1,0 +1,26 @@
+.Picture {
+  img {
+    border-radius: var(--border-radius);
+  }
+}
+
+.big {
+  .image {
+    height: 390px;
+    width: var(--app-width-short);
+  }
+}
+
+.medium {
+  .image {
+    height: 207px;
+    width: 280px;
+  }
+}
+
+.small {
+  .image {
+    height: 73px;
+    width: 110px;
+  }
+}

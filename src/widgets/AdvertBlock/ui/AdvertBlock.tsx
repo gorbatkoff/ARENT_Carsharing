@@ -1,17 +1,22 @@
 import {memo} from "react";
-import styles from "./RecentlyWatch.module.scss";
+import styles from "./AdvertBlock.module.scss";
 import classNames from "classnames";
 import Text from "shared/ui/Text/Text";
 import {Card} from "shared/ui/Card/Card";
 import CarLogo from "shared/assets/images/Car.png";
 
 interface RecentlyWatchProps {
-    className?: string
+    className?: string;
+    title: string;
+    arrayOfAdverts?: Array<any>
 }
 
-export const RecentlyWatch = memo((props: RecentlyWatchProps) => {
+export const AdvertBlock = memo((props: RecentlyWatchProps) => {
 
-    const {className} = props;
+    const {
+        className,
+        title
+    } = props;
 
     const renderCards = (count: number) => {
 
@@ -33,8 +38,8 @@ export const RecentlyWatch = memo((props: RecentlyWatchProps) => {
     }
 
     return (
-        <div className={classNames(styles.RecentlyWatch, {}, [className])}>
-            <Text title="Просмотренные объявления"/>
+        <div className={classNames(styles.AdvertBlock, {}, [className])}>
+            <Text title={title}/>
             <div className={styles.cardList}>
                 {renderCards(4)}
             </div>

@@ -1,0 +1,17 @@
+.AdvertContact {
+  width: min-content;
+
+  button {
+    padding: calc(var(--indent) * 1.2) calc(var(--indent) * 2);
+    margin: 0.5em 0;
+    width: 254px;
+  }
+}
+
+.buttons {
+  margin-top: 120px;
+}
+
+.author {
+  margin: calc(var(--indent) * 2) 0;
+}

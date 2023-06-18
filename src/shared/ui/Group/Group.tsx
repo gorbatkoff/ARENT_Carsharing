@@ -11,31 +11,32 @@ export enum GroupTheme {
 
 export enum GroupAlign {
     LEFT = "left",
-	RIGHT = "right",
-	CENTER = "center",
+    RIGHT = "right",
+    CENTER = "center",
 }
 
 
 interface GroupProps {
-	className?: string,
-	groupKey: string,
-	groupValue?: string | number,
-	theme?: string,
-	align?: string,
+    className?: string,
+    groupKey: string,
+    groupValue?: string | number,
+    theme?: string,
+    align?: string,
 }
 
-export default function Group(props: GroupProps){
-    const {className,
+export default function Group(props: GroupProps) {
+    const {
+        className,
         groupKey,
         groupValue,
-        theme=GroupTheme.PRIMARY,
-        align=GroupAlign.LEFT
+        theme = GroupTheme.DEFAULT,
+        align = GroupAlign.RIGHT
     } = props;
 
     const addition = [className, styles[theme], styles[align]];
 
     return (
-        <div className={classNames(className,styles.Group,[...addition])}>
+        <div className={classNames(className, styles.Group, [...addition])}>
             <div className={classNames(styles.key)}>{groupKey}</div>
             <div className={classNames(styles.value)}>{groupValue}</div>
         </div>

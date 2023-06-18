@@ -1,0 +1,13 @@
+.AdvertActions {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+
+  button {
+    margin-right: 1em;
+  }
+
+  svg {
+    stroke: var(--primary-color);
+  }
+}

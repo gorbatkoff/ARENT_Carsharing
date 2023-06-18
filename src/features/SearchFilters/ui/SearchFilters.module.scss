@@ -1,0 +1,16 @@
+.SearchFilters {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 25px 10px;
+  background: #F5F8FD;
+  margin: 30px 0;
+  border-radius: var(--border-radius)
+}
+
+.filterBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}

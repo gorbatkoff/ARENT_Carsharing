@@ -10,7 +10,8 @@
   &:hover {
     opacity: 0.8;
   }
-  Svg {
+
+  svg {
     margin-right: 8px;
   }
 }
@@ -32,12 +33,25 @@
 }
 
 .white-secondary {
-  border: 1px solid var(--input-light-bg);
+  border: 1px solid var(--inverted-secondary-color);
   background: none;
   color: var(--secondary-color);
 }
+
 .white-primary {
   border: 1px solid var(--input-light-bg);
   background: none;
   color: var(--primary-color);
+}
+
+.inverted {
+  background: #E4EEFA;
+  color: var(--primary-color);
+  border-radius: 22px;
+  border: none;
+}
+
+.align {
+  display: flex;
+  align-items: center;
 }

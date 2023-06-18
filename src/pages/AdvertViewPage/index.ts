@@ -1,0 +1,1 @@
+export {AdvertViewPageAsync as AdvertViewPage} from "./ui/AdvertViewPage.async"
