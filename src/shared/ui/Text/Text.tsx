@@ -13,6 +13,7 @@ export enum TextAlign {
     RIGHT = "right",
     CENTER = "center",
     LEFT = "left",
+    JUSTIFY = "justify",
 }
 
 export enum TextSize {
@@ -29,6 +30,7 @@ interface TextProps {
     theme?: string;
     align?: string;
     size?: string;
+    bold?: boolean
 }
 
 export default function Text(props: TextProps) {
@@ -39,6 +41,7 @@ export default function Text(props: TextProps) {
         theme = TextTheme.DEFAULT,
         align = TextAlign.LEFT,
         size = TextSize.M,
+        bold = false,
     } = props;
 
     const addition = [className, styles[theme], styles[align], styles[size]];

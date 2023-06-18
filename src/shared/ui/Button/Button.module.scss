@@ -10,7 +10,8 @@
   &:hover {
     opacity: 0.8;
   }
-  Svg {
+
+  svg {
     margin-right: 8px;
   }
 }
@@ -36,6 +37,7 @@
   background: none;
   color: var(--secondary-color);
 }
+
 .white-primary {
   border: 1px solid var(--input-light-bg);
   background: none;

@@ -1,0 +1,41 @@
+.AdvertViewPage {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: calc(var(--indent) * 1.5);
+}
+
+.subPictures {
+  margin-bottom: calc(var(--indent) * 2);
+}
+
+.characteristics {
+  gap: var(--indent);
+  padding: var(--indent) 0;
+  width: var(--app-width-short);
+}
+
+.description {
+  width: var(--app-width-short);
+  margin: var(--indent) 0;
+}
+
+.header {
+  margin-top: calc(var(--indent) * 2);
+  margin-bottom: var(--indent);
+}
+
+.container {
+  width: var(--app-width-short);
+}
+
+.subDescription {
+  margin-top: var(--indent);
+}
+
+.clearBox {
+  height: 281px;
+  width: 275px;
+  background: #F5F8FD;
+  border-radius: 7px;
+}

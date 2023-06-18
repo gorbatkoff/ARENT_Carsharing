@@ -1,0 +1,5 @@
+.AdvertQuestions {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  gap: 1em;
+}
