@@ -10,11 +10,23 @@
     "lint:ts": "eslint \"**/*.{ts,tsx}\"",
     "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
     "lint:scss": "npx stylelint \"**/*.scss\"",
-    "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix"
+    "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@storybook/addon-essentials": "^7.0.22",
+    "@storybook/addon-interactions": "^7.0.22",
+    "@storybook/addon-links": "^7.0.22",
+    "@storybook/blocks": "^7.0.22",
+    "@storybook/react": "^7.0.22",
+    "@storybook/react-webpack5": "^7.0.22",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@svgr/webpack": "^8.0.1",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.35",
@@ -30,10 +42,13 @@
     "eslint": "^8.41.0",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.12",
     "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.5",
     "sass": "^1.62.0",
     "sass-loader": "^13.2.2",
+    "storybook": "^7.0.22",
     "style-loader": "^3.3.2",
     "stylelint": "^15.6.3",
     "stylelint-config-standard-scss": "^9.0.0",
@@ -46,11 +61,11 @@
     "webpack-dev-server": "^4.13.2"
   },
   "dependencies": {
-    "html-webpack-plugin": "^5.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
-    "react-select": "^5.7.3"
+    "react-select": "^5.7.3",
+    "react-tabs": "^6.0.1"
   },
   "resolutions": {
     "@types/webpack": "^4.4.11"
