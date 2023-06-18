@@ -1,12 +1,13 @@
-import * as HTMLWebpackPlugin from "html-webpack-plugin";
 import * as webpack from "webpack";
 import {BuildOptions} from "./types/config";
-import * as MiniCssExtractPlugin from "mini-css-extract-plugin";
+import HTMLWebpackPlugin = require("html-webpack-plugin");
+import ReactRefreshWebpackPlugin = require("@pmmmwh/react-refresh-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 import {BundleAnalyzerPlugin} from "webpack-bundle-analyzer"
 
-export function buildPlugins({paths}: BuildOptions): webpack.WebpackPluginInstance[] {
+export function buildPlugins({paths, isDev}: BuildOptions) {
 
-    return [
+    const plugins = [
         new HTMLWebpackPlugin({
             template: paths.html,
         }),
@@ -15,9 +16,15 @@ export function buildPlugins({paths}: BuildOptions): webpack.WebpackPluginInstan
             filename: "css/[name].[contenthash:8].css",
             chunkFilename: "css/[name].[contenthash:8].css",
         }),
-        new webpack.HotModuleReplacementPlugin(),
-        new BundleAnalyzerPlugin({
-            openAnalyzer: false
-        })
     ]
+
+    if (isDev) {
+        plugins.push(new ReactRefreshWebpackPlugin())
+        plugins.push(new webpack.HotModuleReplacementPlugin())
+        plugins.push(new BundleAnalyzerPlugin({
+            openAnalyzer: false
+        }))
+    }
+
+    return plugins;
 }
