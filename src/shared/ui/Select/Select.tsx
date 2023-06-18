@@ -84,7 +84,7 @@ export default (props: Props) => {
             formatGroupLabel={formatGroupLabel}
             onChange={e => handleChange(e)}
             styles={{
-                control: (baseStyles, state) => ({
+                control: (baseStyles) => ({
                     ...baseStyles,
                     ...styles,
                 }),
