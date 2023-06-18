@@ -7,7 +7,9 @@
 }
 
 .primary {
-  color: var(--primary-color);
+  .description {
+    color: var(--primary-color);
+  }
 
   .title {
     color: var(--primary-color);
@@ -50,6 +52,10 @@
 
 .right {
   text-align: right;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .size_m {

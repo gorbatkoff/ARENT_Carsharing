@@ -32,7 +32,7 @@
 }
 
 .white-secondary {
-  border: 1px solid var(--input-light-bg);
+  border: 1px solid var(--inverted-secondary-color);
   background: none;
   color: var(--secondary-color);
 }
@@ -40,4 +40,16 @@
   border: 1px solid var(--input-light-bg);
   background: none;
   color: var(--primary-color);
+}
+
+.inverted {
+  background: #E4EEFA;
+  color: var(--primary-color);
+  border-radius: 22px;
+  border: none;
+}
+
+.align {
+  display: flex;
+  align-items: center;
 }
